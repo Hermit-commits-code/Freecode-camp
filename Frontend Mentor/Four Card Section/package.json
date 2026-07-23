@@ -1,0 +1,23 @@
+{
+  "name": "four-card-section",
+  "version": "1.0.0",
+  "description": "Four card section project built with HTML, Stylus",
+  "homepage": "https://github.com/Hermit-commits-code/four-card-sectional#readme",
+  "bugs": {
+    "url": "https://github.com/Hermit-commits-code/four-card-sectional/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hermit-commits-code/four-card-sectional.git"
+  },
+  "license": "MIT",
+  "author": "Joseph Chu",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "stylus": "^0.64.0"
+  }
+}
