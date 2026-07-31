@@ -1,0 +1,146 @@
+:root {
+  --color-green-200: hsl(148, 38%, 91%);
+  --color-green-600: hsl(169, 82%, 27%);
+  --color-red: hsl(0, 66%, 54%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-500: hsl(186, 15%, 59%);
+  --color-grey-900: hsl(187, 24%, 22%);
+  --font-body: 'Karla', sans-serif;
+  --font-size-label: 1rem;
+  --radius: 0.75rem;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: var(--font-size-label);
+  line-height: 1.5;
+  color: var(--color-grey-900);
+  background: var(--color-green-200);
+  display: grid;
+  place-items: center;
+  padding: 1.5rem 1rem;
+}
+
+main {
+  width: min(100%, 38rem);
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-grey-900);
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background: var(--color-white);
+  box-shadow: var(--shadow);
+}
+
+label,
+legend {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--color-grey-500);
+  border-radius: 0.5rem;
+  background: var(--color-white);
+  color: var(--color-grey-900);
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+fieldset div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  width: auto;
+  margin: 0;
+}
+
+button {
+  padding: 0.9rem 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: var(--color-green-600);
+  color: var(--color-white);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  background: hsl(169, 82%, 20%);
+}
+
+.error-message {
+  min-height: 1.25rem;
+  margin: 0.25rem 0 0;
+  color: var(--color-red);
+  font-size: 0.95rem;
+}
+
+#successMessage {
+  min-height: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-green-600);
+  font-weight: 700;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-green-600);
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 2rem;
+  }
+
+  form {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
