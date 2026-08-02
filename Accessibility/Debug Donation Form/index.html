@@ -9,17 +9,17 @@
   <body>
     <h1>Donation Form</h1>
     <form>
-      <label for="name">Full Name:</label>
+      <label for="fullName">Full Name:</label>
+      <input type="text" name="name" id="fullName" required>
 
-      <input type="text" name="name"></input>
+      <label for="emailAddress"> Email Address:</label>
+      <input type="email" name="email" id="emailAddress" required>
 
-      Email Address:
-      <input type="text" name="email">
+      <label for="donationAmt">Donation Amount ($):</label>
+      <input type="number" name="amount" id="donationAmt" required>
 
-      Donation Amount ($):
-      <input type="number" name="amount">
-
-      <input type="checkbox" name="newsletter">
+      <label for="subscription">Subscribe</label>
+      <input type="checkbox" name="newsletter" id="subscription">
       Subscribe
 
       <input type="submit" value="Send">
