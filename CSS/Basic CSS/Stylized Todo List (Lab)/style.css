@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: bisque;
+}
+
+a:link {
+  color: aquamarine;
+}
+
+a:visited {
+  color: blueviolet;
+}
+
+a:focus {
+  outline: 1px solid blueviolet;
+}
+
+a:active {
+  color: brown;
+}
