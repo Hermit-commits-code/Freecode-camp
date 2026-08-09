@@ -1,0 +1,14 @@
+body {
+    padding: 50px 0px;
+    margin: 0px auto;
+    width: 100vw;
+    min-height: calc(100vh - 100px);
+}
+
+hr {
+    width: 40%;
+}
+
+section {
+    width: 40%;
+}
