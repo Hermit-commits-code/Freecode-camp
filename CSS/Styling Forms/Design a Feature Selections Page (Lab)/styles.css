@@ -1,0 +1,21 @@
+input[type=checkbox] {
+  appearance: none;
+  border: 2px solid #f1be32;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #f1be32;
+  border-color: #e2a60d;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  line-height: 20px;
+}
